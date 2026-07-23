@@ -1,0 +1,45 @@
+Owner@MSI MINGW64 ~
+$ cd ~/Desktop
+
+Owner@MSI MINGW64 ~/Desktop
+$ mkdir git_challenge
+
+Owner@MSI MINGW64 ~/Desktop
+$ cd git_challenge
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/Owner/Desktop/git_challenge/.git/
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ echo "Hello,world" > hello_world.txt
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "First commit"
+[main (root-commit) e1955d3] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ git commit -m "Second commit"
+[main 48b9a53] Second commit
+ 1 file changed, 1 insertion(+)
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ git log --oneline
+48b9a53 (HEAD -> main) Second commit
+e1955d3 First commit
+
+Owner@MSI MINGW64 ~/Desktop/git_challenge (main)
+$ 
